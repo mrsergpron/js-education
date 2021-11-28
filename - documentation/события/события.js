@@ -78,3 +78,25 @@ const link = document.querySelector("a");
 link.addEventListener("click", function (event) {
   event.preventDefault();
 });
+
+//Делегирование событий
+
+//задовать события циклом ресурсозатратно для приложения!!!
+
+//задать цвет кликнув по элементу
+document.getElementById("wrap").addEventListener("click", function (event) {
+  event.target.style.color = "green";
+});
+
+//задать цвет элементу с определенным тегом
+document.getElementById("wrap2").addEventListener("click", function (event) {
+  console.log(event.target.tagName.toLowerCase());
+
+  if (event.target.tagName.toLowerCase() === "p") {
+    event.target.style.color = "green";
+  }
+  //задать цвет элементу с определенным классом
+  if (event.target.classList.contains("item2")) {
+    event.target.style.color = "blue";
+  }
+});
