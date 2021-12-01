@@ -17,5 +17,6 @@ console.log(a.getAttribute("target")); // _blank
 //изменить аттрибут
 a.setAttribute("href", "https://www.google.com/");
 a.setAttribute("title", "ссылка на гугл");
+a.removeAttribute("title");
 a.textContent = "GOOGLE";
 console.log(a);
