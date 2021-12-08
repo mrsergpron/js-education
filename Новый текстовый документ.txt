@@ -1,8 +1,0 @@
-Технология Javascript
-===========================
-https://webpack.js.org/
-https://www.w3schools.com/
-https://developer.mozilla.org/ru/
-https://learn.javascript.ru/
-
-https://github.com/mrsergpron/js-education.git
